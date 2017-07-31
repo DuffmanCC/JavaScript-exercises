@@ -1,0 +1,31 @@
+Write a JavaScript program to find 1st January is being a Sunday between 2014 and 2050.
+<hr>
+
+<div id="app"></div>
+
+<script type="text/javascript">	
+
+	var app = document.getElementById('app');
+
+	function queDiaDelaSemanaEs(day, month, year){
+		var month = month - 1;
+		var year = year;
+		var day = new Date(year, month, day);
+		var daysOfTheWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday' ];
+		var dayWeek = daysOfTheWeek[day.getDay()];
+		return dayWeek;
+	}
+
+	n_dias = 0;
+
+	for (var i = 2014; i < 2051; i++) {
+		
+		if(queDiaDelaSemanaEs(1, 1, i) === 'Sunday'){
+			n_dias++;
+		}
+		resultado = 'hay ' + n_dias + ' años entre el 2014 y 2050, que el 1 de enero será domingo';
+	}
+
+	app.innerHTML = resultado;
+
+</script>

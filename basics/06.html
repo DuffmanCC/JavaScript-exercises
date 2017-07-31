@@ -1,0 +1,23 @@
+Write a JavaScript program to determine whether a given year is a leap year in the Gregorian calendar. 
+<hr>
+
+<div id="app"></div>
+
+<script type="text/javascript">
+
+	function is_leap_year(year){
+	
+		var year;
+		var app = document.getElementById('app');
+
+		if (year % 4 === 0 && year % 100 === 0 && year % 400 === 0) {
+			app.innerHTML = 'es bisiesto';
+		} else {
+			app.innerHTML = 'no es bisiesto';
+		}
+
+	}
+
+	is_leap_year(2400);
+
+</script>

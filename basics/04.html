@@ -1,0 +1,18 @@
+Write a JavaScript program to find the area of a triangle where lengths of the three of its sides are 5, 6, 7
+
+<hr>
+
+<div id="app"></div>
+
+<script type="text/javascript">
+
+	var semiperimetro = (5 + 6 + 7) / 2;
+
+	area = semiperimetro * ((semiperimetro - 5) * (semiperimetro - 6) * (semiperimetro - 7));
+	area = Math.sqrt(area);
+
+	var app = document.getElementById('app');
+
+	app.innerHTML = area;
+
+</script>

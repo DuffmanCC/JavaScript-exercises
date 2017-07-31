@@ -1,0 +1,31 @@
+Write a JavaScript program to get the current date.
+Expected Output : 
+mm-dd-yyyy, mm/dd/yyyy or dd-mm-yyyy, dd/mm/yyyy 
+
+<hr>
+
+<div id="app"></div>
+
+<script type="text/javascript">
+	var today = new Date();
+
+	var month = today.getMonth();
+	var day = today.getDate();
+	var year = today.getFullYear();
+
+	if (month < 10) {
+		month = '0' + month;
+	} else {
+		month;
+	}
+
+	if (day < 10) {
+		day = '0' + day;
+	} else {
+		day;
+	}
+
+	var app = document.getElementById('app');
+
+	app.innerHTML = month + '/' + day + '/' + year;
+</script>
