@@ -1,0 +1,23 @@
+Write a JavaScript program to calculate days left until next Christmas.
+<hr>
+
+<div id="app"></div>
+
+<script type="text/javascript">
+
+	var app = document.getElementById('app');
+
+	var today = new Date();
+
+	var christmas = new Date(2017, 11, 25);
+
+	var days = christmas - today;
+
+	function fromMilisecondsToDays(miliseconds){
+		var days = miliseconds / 1000 / 3600 / 24;
+		return days;
+	}
+
+	app.innerHTML = 'Faltan ' + parseInt(fromMilisecondsToDays(days)) + ' para Navidad.';
+	
+</script>

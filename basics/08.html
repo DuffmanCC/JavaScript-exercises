@@ -1,0 +1,22 @@
+Write a JavaScript program where the program takes a random integer between 1 to 10, the user is then prompted to input a guess number. If the user input matches with guess number, the program will display a message "Good Work" otherwise display a message "Not matched".
+<hr>
+
+<script type="text/javascript">
+	
+	var randomNumber = Math.floor((Math.random() * 10) + 1);
+
+	console.log(randomNumber);
+
+	var numberFromUser = prompt('Instert a number between 1 and 10');
+	var numberFromUser = parseInt(numberFromUser);
+
+	if (randomNumber === numberFromUser) {
+		alert('Good Work');
+	} else {
+		alert('Not matched');
+	}
+
+	
+
+
+</script>
