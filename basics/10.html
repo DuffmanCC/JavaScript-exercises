@@ -1,0 +1,44 @@
+ Write a JavaScript program to calculate multiplication and division of two numbers (input from user).
+ <hr>
+
+
+
+<p>1st Number: <input type="numbers" id="first_number" /></p>
+<p>2nd Number: <input type="numbers" id="second_number" /></p>
+
+<button id="multiply" onClick="multiply()">Multiply</button>
+<button id="divide" onClick="divide()">Divide</button>
+
+
+<br>
+
+<p>The result is: <span id="app"></span></p>
+
+ <script type="text/javascript">
+
+ 	var result = '';
+
+ 	function multiply(firstNumber, secondNumber){
+	 	var firstNumber = document.getElementById('first_number').value;
+	 	var secondNumber = document.getElementById('second_number').value;
+	 	
+ 		var result = firstNumber * secondNumber;
+
+	 	var app = document.getElementById('app');
+	 	app.innerHTML = result;
+ 	}
+
+ 	function divide(firstNumber, secondNumber){
+	  	var firstNumber = document.getElementById('first_number').value;
+	 	var secondNumber = document.getElementById('second_number').value;
+
+ 		var result = firstNumber / secondNumber;
+
+	 	var app = document.getElementById('app');
+	 	app.innerHTML = result;
+ 	}
+
+ 	var app = document.getElementById('app');
+ 	app.innerHTML = result;
+ 	
+ </script>
