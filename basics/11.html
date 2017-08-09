@@ -1,0 +1,27 @@
+Write a JavaScript program to convert temperatures to and from celsius, fahrenheit.
+<br>
+
+<p><input type="text" id="grades"></p>
+
+<p>
+	<button onClick="celsiusToFarenheit()">Conver to farenheit</button>
+	<button onClick="farenheitToCelsius()">Conver to celsius</button>
+</p>
+
+<p id="app"></p>
+
+<script type="text/javascript">
+	function celsiusToFarenheit(grades){
+		var grades = document.getElementById('grades').value;
+		var farenheit = (grades * 9/5 ) + 32;
+		var app = document.getElementById('app');
+		app.innerHTML = farenheit;
+	}
+
+	function farenheitToCelsius(grades){
+		var grades = document.getElementById('grades').value;
+		var celsius = 5/9 * (grades - 32);
+		var app = document.getElementById('app');
+		app.innerHTML = celsius;
+	}
+</script>
