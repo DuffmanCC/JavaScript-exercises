@@ -1,0 +1,21 @@
+Write a JavaScript exercise to get the extension of a filename.
+<hr>
+
+<script type="text/javascript">
+
+	function getExtension(name){
+		var extension = name.substr(-3,3);
+		return extension;
+	}
+
+	//better solution
+
+	function getExtension2(name){
+		var extension = name.split('.');
+		return extension[1];
+	}
+
+	console.log(getExtension('pulpo.jpg'));
+	console.log(getExtension2('page.php'));
+	
+</script>
