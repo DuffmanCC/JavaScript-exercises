@@ -1,0 +1,12 @@
+Write a JavaScript program to remove a character at the specified position of a given string and return the new string.
+<hr>
+
+<script type="text/javascript">
+	function removeCharacter(string, position){
+		 str1 = string.slice(0, position);
+		 str2 = string.slice(position + 1, string.length)
+		 return str1 + str2;
+	}
+
+	console.log(removeCharacter('ola q ase', 7));
+</script>

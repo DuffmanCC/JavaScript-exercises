@@ -1,0 +1,15 @@
+Write a JavaScript program to create a new string adding "Py" in front of a given string. If the given string begins with "Py" then return the original string.
+<hr>
+
+<script type="text/javascript">
+	function adPy(string){
+
+		if (string === undefined || string === null || string.slice(0, 2) === 'Py') {
+			return string;
+		}
+		return string = 'Py' + string;
+
+	}
+
+	console.log(adPy());
+</script>

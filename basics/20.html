@@ -1,0 +1,13 @@
+Write a JavaScript program to check from two given integers, if one is positive and one is negative.
+<hr>
+
+<script type="text/javascript">
+	function is_positive(a, b){
+		if ( (a > 0 && b < 0) || (a < 0 && b > 0)) {
+			return true;
+		}
+		return false;
+	}
+
+	console.log(is_positive(0, -4));
+</script>
