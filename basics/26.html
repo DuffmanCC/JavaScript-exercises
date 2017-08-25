@@ -1,0 +1,15 @@
+Write a JavaScript program to create a new string from a given string taking the last 3 characters and added at both the front and back. The string length must be 3 or more.
+<hr>
+
+<script type="text/javascript">
+	
+	function add3Characters(str){
+		if (str.length >= 3){
+			last3 = str.substr(str.length - 3, 3);
+			return last3 + str + last3;
+		}
+		return 'string must be 3 or more';
+	}
+
+	console.log(add3Characters('ca'));
+</script>
