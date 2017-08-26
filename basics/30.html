@@ -1,0 +1,21 @@
+Write a JavaScript program to check if a string "Script" presents at 5th (index 4) position in a given string, if "Script" presents in the string return the string without "Script" otherwise return the original one.
+<hr>
+
+
+<script>
+
+	function checkScript(str){
+		if ( str.substr(4, 6) == 'Script') {
+			return str.substr(0, 4) + str.substr(10, str.length - 10);
+		}
+		return str;
+	}
+	
+	console.log(checkScript('JavaScript'));
+	console.log(checkScript('JavaaScript'));
+	console.log(checkScript('CoffeScript'));
+	console.log(checkScript('abcd'));
+	console.log(checkScript('abcdScript'));
+	console.log(checkScript('abcdScripttx'));
+	console.log(checkScript('abcdScrippt'));
+</script>

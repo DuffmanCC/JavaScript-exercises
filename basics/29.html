@@ -1,0 +1,17 @@
+Write a JavaScript program to check if three given integer values are in the range 50..99 (inclusive). Return true if one or more of them are in the said range.
+<hr>
+
+<script type="text/javascript">
+	
+	function areInRange(a, b, c){
+		if ( (a >= 50 && a <=99) || (b >= 50 && b <=99 ) || (b >= 50 && b <=99 ) ) {
+			return true;
+		}
+		return false;
+	}
+
+	console.log(areInRange(50, 100, 112));
+	console.log(areInRange(45, 100, 112));
+	console.log(areInRange(49, 99, 123));
+	console.log(areInRange(59, 90, 34));
+</script>
