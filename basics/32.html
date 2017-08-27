@@ -1,0 +1,24 @@
+Write a JavaScript program to find a value which is nearest to 100 from two different given integer values.
+<hr>
+
+<script>
+	function nearest100(a, b){
+		aDiff = Math.abs(100 - a);
+		bDiff = Math.abs(100 - b);
+
+		if (aDiff > bDiff) {
+			return b;
+		}
+		return a;
+
+	}
+
+	console.log(nearest100(80, 90));
+	console.log(nearest100(95, 90));
+	console.log(nearest100(80, 80));
+	console.log(nearest100(80, 105));
+	console.log(nearest100(110, 105));
+	console.log(nearest100(110, 105));
+	console.log(nearest100(98, 101));
+	console.log(nearest100(-80, -50));
+</script>
