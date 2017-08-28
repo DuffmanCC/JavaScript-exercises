@@ -1,0 +1,22 @@
+Write a JavaScript program to check a given string contains 2 to 4 numbers of a specified character.
+<hr>
+
+<script>
+	function checkCharacterInString(str, character){
+		count = 0;
+		for (var i = 0; i < str.split('').length; i++) {
+			if (str.split('')[i] == character) {
+				count++;
+			}
+		}
+		if (count >= 2 && count <= 4) {
+			return true
+		}
+		return false;
+	}
+
+	console.log(checkCharacterInString('mississipi', 'a'));
+	console.log(checkCharacterInString('mississipi', 's'));
+	console.log(checkCharacterInString('mississipi', 'i'));
+	console.log(checkCharacterInString('mississipi', 'p'));
+</script>

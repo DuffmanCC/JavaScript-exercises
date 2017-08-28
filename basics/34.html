@@ -1,0 +1,13 @@
+Write a JavaScript program to find the larger number from the two given positive integers, the two numbers are in the range 40..60 inclusive.
+<hr>
+
+<script>
+	function largerNumber(a, b){
+		if ( a >= 40 && a <=60 && b >= 40 && b <=60 ) {
+			return Math.max(a, b);
+		}
+		return false;
+	}
+
+	console.log(largerNumber(60, 59));
+</script>
