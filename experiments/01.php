@@ -1,6 +1,4 @@
 <script>
-	
-
 	var json = {keyA: {
 					keyB: 'b',
 					keyC: 'c'
